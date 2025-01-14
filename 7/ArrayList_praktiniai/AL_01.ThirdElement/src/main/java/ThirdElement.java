@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class ThirdElement {
@@ -9,13 +10,14 @@ public class ThirdElement {
 
         ArrayList<String> list = new ArrayList<>();
         while (true) {
+
             String input = scanner.nextLine();
             if (input.equals("")) {
+                System.out.println(list.get(2));
                 break;
             }
 
             list.add(input);
-            System.out.println(input.indexOf(2));
         }
 
 
