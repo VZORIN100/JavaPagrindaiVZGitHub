@@ -1,5 +1,6 @@
 
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class IndexWasNotFound {
@@ -17,9 +18,18 @@ public class IndexWasNotFound {
         array[7] = 7;
 
         System.out.print("Search for? ");
-        int searching = Integer.valueOf(scanner.nextLine());
+        int value = Integer.parseInt(scanner.nextLine());
 
         // Implement the search functionality here
+        // int searching = array[4];
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == value) {
+                value = i;
+                System.out.println(array[i] + " is at index " + value);
+            }
+        }
+
     }
 
 }
