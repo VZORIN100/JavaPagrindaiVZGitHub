@@ -13,12 +13,12 @@ public class ThirdElement {
 
             String input = scanner.nextLine();
             if (input.equals("")) {
-                System.out.println(list.get(2));
                 break;
             }
 
             list.add(input);
         }
+        System.out.println(list.get(2));
 
 
     }

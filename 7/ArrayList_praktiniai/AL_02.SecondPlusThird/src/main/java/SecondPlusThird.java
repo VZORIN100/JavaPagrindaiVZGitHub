@@ -13,10 +13,11 @@ public class SecondPlusThird {
             if (number == 0) {
                 break;
             }
-            
+
             numbers.add(number);
         }
+        System.out.println(numbers.get(1) + numbers.get(2));
 
-        
+
     }
 }
