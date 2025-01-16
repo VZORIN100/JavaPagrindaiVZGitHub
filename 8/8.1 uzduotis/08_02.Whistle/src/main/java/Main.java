@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Main {
 
@@ -5,11 +6,16 @@ public class Main {
         // This is just an empty main method you can use to test
         // the Whistle class. Try for example:
 
-//        Whistle duckWhistle = new Whistle("Kvaak");
-//        Whistle roosterWhistle = new Whistle("Peef");
+        Scanner scanner = new Scanner(System.in);
+        Whistle duckWhistle = new Whistle("Kvaak");
+        Whistle roosterWhistle = new Whistle("Peef");
+
+//        System.out.println(duckWhistle.getDuckWhistle());
+//        System.out.println(roosterWhistle.getRoosterWhistle());
+//        System.out.println(roosterWhistle.getDuckWhistle());
 //
-//        duckWhistle.sound();
-//        roosterWhistle.sound();
-//        duckWhistle.sound();
+        duckWhistle.sound();
+        roosterWhistle.sound();
+        duckWhistle.sound();
     }
 }
