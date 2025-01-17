@@ -12,8 +12,17 @@ public class DecreasingCounter {
         System.out.println("value: " + this.value);
     }
 
+
     public void decrement() {
         // write the method implementation here
+        if (this.value >= 0) {
+            this.value -= 1;
+            //System.out.println("value: " + (this.value -= 1));
+        } else {
+            this.value = 0;
+            //System.out.println("value: " + (this.value = 0));
+        }
+        System.out.println("value: " + this.value);
         // the aim is to decrement the value of the counter by one
     }
 
