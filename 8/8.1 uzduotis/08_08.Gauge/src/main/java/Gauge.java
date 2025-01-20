@@ -4,6 +4,7 @@ public class Gauge {
 
     //Constructor
     public Gauge() {
+        //value = 0; //Sets initial value to 0 but empty constructor already does that.
     }
 
     public void increase() {
