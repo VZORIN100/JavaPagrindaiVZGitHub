@@ -1,18 +1,21 @@
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
         // Test your Gauge class here
 
-        // Gauge g = new Gauge();
+        Scanner scanner = new Scanner(System.in);
+        Gauge g = new Gauge();
 
-        // while(!g.full()) {
-        //     System.out.println("Not full! Value: " + g.value());
-        //     g.increase();
-        // }
+        while (!g.full()) {
+            System.out.println("Not full! Value: " + g.value());
+            g.increase();
+        }
 
-        // System.out.println("Full! Value: " + g.value());
-        // g.decrease();
-        // System.out.println("Not full! Value: " + g.value());
+        System.out.println("Full! Value: " + g.value());
+
+        g.decrease();
+        System.out.println("Not full! Value: " + g.value());
     }
 }
