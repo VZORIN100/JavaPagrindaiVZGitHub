@@ -21,7 +21,7 @@ public class Sum {
             sum = sum + number;
         }
         return sum;
-        
+
     }
 
 }
