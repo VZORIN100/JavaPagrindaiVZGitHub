@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/12.2.iml" filepath="$PROJECT_DIR$/12.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Count_Specific_Items/Count_Specific_Items.iml" filepath="$PROJECT_DIR$/Count_Specific_Items/Count_Specific_Items.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Create_Strings_Containing_Specific_Characters/Create_Strings_Containing_Specific_Characters.iml" filepath="$PROJECT_DIR$/Create_Strings_Containing_Specific_Characters/Create_Strings_Containing_Specific_Characters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sorting_By_Last_Character/Sorting_By_Last_Character.iml" filepath="$PROJECT_DIR$/Sorting_By_Last_Character/Sorting_By_Last_Character.iml" />
+    </modules>
+  </component>
+</project>
