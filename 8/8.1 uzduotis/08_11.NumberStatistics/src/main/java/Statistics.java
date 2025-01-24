@@ -24,7 +24,6 @@ public class Statistics {
 //        for (int i = 0; i < count; i++) {
 //            number = count;
 //            sum = sum + number;
-//
 //        }
 //        return sum;
 //    }
@@ -34,8 +33,19 @@ public class Statistics {
     }
 
     public double average() {
-        double average = (1.0 * sum) / count;
+        double average = 0;
+        if (count != 0) {
+            average = (1.0 * sum) / count;
+            //Or just 1 line: return (1.0 * sum) / count;
+        }
         return average;
-        //Or just 1 line: return (1.0 * sum) / count;
     }
+
+    //Was like this below. Tests did not pass since you can not divide by 0.
+//    public double average() {
+//        double average;
+//        average = (1.0 * sum) / count;
+//        return average;
+//        //Or just 1 line: return (1.0 * sum) / count;
+//    }
 }

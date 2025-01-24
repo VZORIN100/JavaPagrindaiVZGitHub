@@ -8,21 +8,21 @@ public class MainProgram {
         Scanner scanner = new Scanner(System.in);
         Statistics statistics = new Statistics();
 
-        //Statistics start = new Statistics();
-        //Can use above for new GENERAL SUM used for input part of exercise.
+        //Can use above statistics instead of start for new GENERAL SUM used for input part of exercise.
+        Statistics start = new Statistics();
         Statistics even = new Statistics();
         Statistics odd = new Statistics();
 
         //These bellow were commented out so not to intervene with part 2 of exercise.
         //Where personal input is needed.
 
-        //statistics.addNumber(3);
-        //statistics.addNumber(5);
-        //statistics.addNumber(1);
-        //statistics.addNumber(2);
-        //System.out.println("Count: " + statistics.getCount());
-        //System.out.println("Sum: " + statistics.sum());
-        //System.out.println("Average: " + statistics.average());
+//        statistics.addNumber(3);
+//        statistics.addNumber(5);
+//        statistics.addNumber(1);
+//        statistics.addNumber(2);
+//        System.out.println("Count: " + statistics.getCount());
+//        System.out.println("Sum: " + statistics.sum());
+//        System.out.println("Average: " + statistics.average());
 
 
         // you can write test code here
@@ -31,6 +31,7 @@ public class MainProgram {
         //Sum of user input exercise starts here.
         //ArrayList<Integer> list = new ArrayList<>() was not needed.
         //As exercise asked to use only our Statistics Big Block.
+
         System.out.println("Enter numbers:");
         int input = 0;
 
@@ -40,7 +41,7 @@ public class MainProgram {
             if (input == -1) {
                 break;
             }
-            statistics.addNumber(input);
+            start.addNumber(input);
             if (input % 2 == 0) {
                 even.addNumber(input);
             }
@@ -49,9 +50,9 @@ public class MainProgram {
             }
 
         }
-        System.out.println("Sum: " + statistics.sum());
+        System.out.println("Sum: " + start.sum());
         System.out.println("Sum of even numbers: " + even.sum());
-        System.out.println("Sum of even numbers: " + odd.sum());
+        System.out.println("Sum of odd numbers: " + odd.sum());
 
     }
 }
